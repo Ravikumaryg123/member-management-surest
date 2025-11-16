@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/surest_db
+    username: surest_user
+    password: 01012020
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
+  cache:
+    type: caffeine
+server:
+  port: 8086
+
+jwt:
+  secret: jwttokenkeyforsecuritypurpose!@#$%^&*()124567890
+  expiration: 86400000
+
